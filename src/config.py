@@ -24,6 +24,9 @@ args = argparse.Namespace(
     train_path = "./data/train",
     test_path = "./data/test",
 
+    # Runtime hyper parameter
+    cuda=True,
+
 
     # device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu"),

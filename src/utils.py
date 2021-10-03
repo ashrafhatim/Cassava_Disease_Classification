@@ -15,8 +15,8 @@ import tqdm
 
 
 from .config import args
-from transform import *
-from model import *
+from .transform import *
+from .model import *
 from .dataset import CassavaDataset, extra_CassavaDataset
 
 
