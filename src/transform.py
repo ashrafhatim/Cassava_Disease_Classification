@@ -1,6 +1,5 @@
 
 from torchvision import transforms as T
-import matplotlib.pylab as plt
 
 from randaugment import RandAugment
 
