@@ -95,7 +95,8 @@ def get_labels(file_path):
     return(label)
 
 def create_data():
-  imagePaths = glob("./train/*/*.*", recursive=True)
+  imagePaths = glob("./data/train/*/*", recursive=True)
+  print(imagePaths)
   images_df = pd.DataFrame(columns=['images', 'labels'])
   images_df["images"] = imagePaths
 
@@ -108,7 +109,7 @@ def create_data():
   return images_df
 
 def create_extra_data():
-  extra_imagePaths = glob("./extraimages/*.*", recursive=True)
+  extra_imagePaths = glob("./data/extraimages/*.*", recursive=True)
   extra_df = pd.DataFrame(columns=['images', 'labels'])
   extra_df["images"] = extra_imagePaths
 

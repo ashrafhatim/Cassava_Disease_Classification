@@ -17,6 +17,7 @@ if __name__=="__train__":
 
 print("I am working")
 images_df = create_data()
+print(images_df.shape)
 
 extra_df = create_extra_data()
 
@@ -68,17 +69,19 @@ for train_index, val_index in st_kfold.split(images_df['images'], images_df['lab
     model_ft = train_model(model_ft, criterion, 
                           optimizer_ft, 
                           exp_lr_scheduler, 
-                          num_epochs=5,)
+                          num_epochs=args.epochs,
+                          dataloaders=dataloaders,
+                          dataset_sizes=dataset_sizes
+                          )
 
     break
 
-
 # 
-state = {'epoch': args.epoch,'state_dict': model_ft.state_dict(), 
+state = {'epoch': args.epochs,'state_dict': model_ft.state_dict(), 
             'optimizer': 'optimizer_ft.state_dict()', 
               'loss':'epoch_loss','valid_accuracy': 'best_acc'}
-# create_directories(args.save_dir)
-full_model_path = args.save_dir+'/model_state_trained_labeled_5_epochs.tar'
-#full_model_path = saved_dir+'model_state.tar'
+
+full_model_path = args.save_dir+'/model_state.tar'
 torch.save(state, full_model_path)
+
 print("All is done")

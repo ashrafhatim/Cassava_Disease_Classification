@@ -2,6 +2,7 @@ import argparse
 import torch
 
 args = argparse.Namespace(
+    epochs = 1,
     size = 448,
     # Model Hyperparameters
     learning_rate = 2e-4,
