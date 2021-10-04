@@ -29,6 +29,5 @@ RESNECT101| 90.1|   90.5   |     90.26    |
 PSEUDO-LABELING|91.3| 92.3  |   90.5 |
 
 
-
-
-
+### Conclusion :
+RESNEXT101 model with semi-supervised learning achieved the best result.
