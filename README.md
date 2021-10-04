@@ -30,4 +30,4 @@ PSEUDO-LABELING|91.3| 92.3  |   90.5 |
 
 
 ### Conclusion :
-RESNEXT101 model with semi-supervised learning achieved the best result.
+```RESNEXT101 model with semi-supervised learning achieved the best result.```
