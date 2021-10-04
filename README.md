@@ -19,6 +19,15 @@ pip install -r requirements.txt
 
 The script contains only the main experiment , you can look at the other experiments in the notebook folder.
 
+### Results :
+
+Model| Train Accuracy| Evaluation Accuracy |Public Leader-board |
+------------ | -------------|---------------|-------------------|
+RESNET50| 86.3 |   87.1     |      88.01    |              
+RESNEXT50| 87.4|   87.9   |    88.3     |
+RESNECT101| 90.1|   90.5   |     90.26    |
+PSEUDO-LABELING|91.3| 92.3  |   90.5 |
+
 
 
 
