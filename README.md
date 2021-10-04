@@ -15,7 +15,7 @@ unlabeled images.
 pip install -r requirements.txt
 
 
-### other Experiments :
+### Note:
 
 The script contains only the main experiment , you can look at the other experiments in the notebook folder.
 
