@@ -12,7 +12,14 @@ our best model, then we fine-tune our best model using both the labeled and
 unlabeled images.
 
 ### To download the requirements :
->.pip install -r requirements.txt
+pip install -r requirements.txt
+
+
+### other Experiments :
+
+The script contains only the main experiment , you can look at the other experiments in the notebook folder.
+
+
 
 
 
