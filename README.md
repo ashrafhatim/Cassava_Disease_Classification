@@ -12,7 +12,7 @@ our best model, then we fine-tune our best model using both the labeled and
 unlabeled images.
 
 ### To download the requirements :
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 
 ### Note:
