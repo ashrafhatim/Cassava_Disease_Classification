@@ -18,7 +18,7 @@ unlabeled images.
 
 ### Note:
 
-The script contains only the main experiment , you can look at the other experiments in the notebook folder.
+The script contains only the main experiment , please look at the other experiments in the notebook folder.
 
 ### Results :
 
